@@ -20,8 +20,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}     # your PEM private key
           script: |
-            cd ~/nodeapp || git clone https://github.com/jas-fullstack/nodeapp.git ~/nodeapp
-            cd ~/nodeapp
-            git pull origin main
+            cd ~/nodeapp  
+            git pull origin master
             npm install
             pm2 restart myapp || pm2 start app.js --name myapp
