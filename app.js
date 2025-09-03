@@ -3,7 +3,7 @@ const http = require('http');
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World! This is my basic Node app working svd 🚀\n');
+  res.end('this should work 🚀\n');
 });
 
 const PORT = 3000;
